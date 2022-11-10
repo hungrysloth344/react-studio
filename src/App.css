@@ -1,9 +1,37 @@
 /* Add styling for your page here */
 
 .App {
-
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+   
+}
+.App-Container {
+    display: flex;
+    flex-direction: row;
+}
+.BakeryItem {
+    flex: 1;
 }
 
-.BakeryItem {
-  
+.BakeryItem img {
+  width: 15rem;
+}
+
+.BakeryItem button {
+    width: 15rem;
+  }
+
+.BakeryItem-Container {
+    width: 80%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  padding-left: 2rem;
+}
+
+.Title {
+    font-size: 20px;
 }
