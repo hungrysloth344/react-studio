@@ -6,7 +6,8 @@ const BakeryItem = (props) => {
   return (
     <div className = "BakeryItem"> 
         <img src={props.item.image} alt="bakery item"></img>
-        <div className = "Title">{props.item.name}</div>
+        <div className="BakeryTextContainer">
+        <strong className = "Title">{props.item.name}</strong>
         <div>{props.item.description}</div>
         <div>{props.item.price}</div>
         <button onClick={() => {
@@ -17,6 +18,7 @@ const BakeryItem = (props) => {
                 return newCart;
             })
         }}>Add to Cart</button>
+        </div>
     </div>
   );
 };
